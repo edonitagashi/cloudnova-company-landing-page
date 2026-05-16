@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CloudNova Solutions – Next-generation cloud infrastructure, AI-powered analytics, and scalable DevOps services for modern enterprises." />
+  <meta name="keywords" content="cloud computing, Azure, DevOps, cloud hosting, SaaS, infrastructure" />
+  <title>CloudNova Solutions | Elevate Your Cloud</title>
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts: Syne + Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===================== NAVIGATION ===================== -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <div class="brand-icon">
+        <i class="bi bi-cloud-fill"></i>
+      </div>
+      <span class="brand-text">Cloud<span class="brand-accent">Nova</span></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-cta-nav" href="#contact">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div id="particles-canvas"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-7 col-xl-6">
+        <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+          <i class="bi bi-stars"></i> Trusted by 500+ Global Enterprises
+        </div>
+        <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="200">
+          Elevate Your Business<br />
+          <span class="gradient-text">to the Cloud</span>
+        </h1>
+        <p class="hero-sub" data-aos="fade-up" data-aos-delay="350">
+          CloudNova Solutions delivers enterprise-grade cloud infrastructure,
+          AI-powered analytics, and scalable DevOps pipelines — built for the
+          speed of tomorrow, deployed today.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="450">
+          <a href="#contact" class="btn btn-hero-primary">
+            Start Free Trial <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+          <a href="#services" class="btn btn-hero-ghost">
+            <i class="bi bi-play-circle me-2"></i> Explore Services
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="550">
+          <div class="stat-item">
+            <span class="stat-num" data-target="500">0</span><span class="stat-unit">+</span>
+            <p>Clients Worldwide</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="99">0</span><span class="stat-unit">.9%</span>
+            <p>Uptime SLA</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="50">0</span><span class="stat-unit">+</span>
+            <p>Cloud Regions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-xl-6 d-none d-lg-flex justify-content-center" data-aos="fade-left" data-aos-delay="300">
+        <div class="hero-visual">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+          <div class="orbit-center">
+            <i class="bi bi-cloud-fill"></i>
+          </div>
+          <div class="orbit-dot dot-1"><i class="bi bi-server"></i></div>
+          <div class="orbit-dot dot-2"><i class="bi bi-shield-check"></i></div>
+          <div class="orbit-dot dot-3"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="orbit-dot dot-4"><i class="bi bi-cpu"></i></div>
+          <div class="orbit-dot dot-5"><i class="bi bi-database-fill"></i></div>
+          <div class="orbit-dot dot-6"><i class="bi bi-gear-wide-connected"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll to explore</span>
+    <i class="bi bi-chevron-double-down"></i>
+  </div>
+</section>
+
+<!-- ===================== TRUSTED BY ===================== -->
+<section id="trusted" class="section-trusted">
+  <div class="container">
+    <p class="trusted-label" data-aos="fade-up">Trusted by industry leaders worldwide</p>
+    <div class="trusted-logos" data-aos="fade-up" data-aos-delay="100">
+      <div class="trusted-item"><i class="bi bi-microsoft"></i> Microsoft</div>
+      <div class="trusted-item"><i class="bi bi-google"></i> Google Cloud</div>
+      <div class="trusted-item"><i class="bi bi-amazon"></i> AWS</div>
+      <div class="trusted-item"><i class="bi bi-buildings"></i> FinTech Corp</div>
+      <div class="trusted-item"><i class="bi bi-hospital"></i> MedSystems</div>
+      <div class="trusted-item"><i class="bi bi-broadcast"></i> MediaHub</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section-about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="about-visual-grid">
+          <div class="about-card-big">
+            <i class="bi bi-cloud-arrow-up-fill"></i>
+            <h3>Cloud-First Architecture</h3>
+            <p>Built from the ground up for modern distributed systems</p>
+          </div>
+          <div class="about-card-sm card-sm-1">
+            <i class="bi bi-lightning-charge-fill"></i>
+            <p>10× Faster Deployments</p>
+          </div>
+          <div class="about-card-sm card-sm-2">
+            <i class="bi bi-shield-fill-check"></i>
+            <p>Zero-Trust Security</p>
+          </div>
+          <div class="about-card-sm card-sm-3">
+            <i class="bi bi-graph-up"></i>
+            <p>Real-Time Analytics</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="150">
+        <div class="section-label">About CloudNova</div>
+        <h2 class="section-title">We Build the Cloud <br /><span class="gradient-text">Your Business Deserves</span></h2>
+        <p class="section-body">
+          Founded in 2019, CloudNova Solutions has rapidly grown into one of the
+          most trusted cloud technology partners globally. We specialize in
+          designing, deploying, and managing scalable cloud infrastructure on
+          Microsoft Azure, AWS, and Google Cloud Platform.
+        </p>
+        <p class="section-body">
+          Our team of 200+ certified cloud architects, DevOps engineers, and
+          security specialists work alongside your organization to accelerate
+          digital transformation — reducing operational costs while maximizing
+          performance, reliability, and security.
+        </p>
+        <div class="about-features">
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>ISO 27001 &amp; SOC 2 Type II Certified</span>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Microsoft Gold Partner &amp; AWS Advanced Tier</span>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>24/7 Expert Support with &lt; 15 Min Response SLA</span>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Global Data Centers Across 6 Continents</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary-custom mt-4">
+          Learn More About Us <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section id="services" class="section-services">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label mx-auto">What We Offer</div>
+      <h2 class="section-title">Enterprise Cloud <span class="gradient-text">Services</span></h2>
+      <p class="section-subtitle">
+        End-to-end cloud solutions designed to transform your infrastructure,
+        accelerate delivery, and secure your digital assets.
+      </p>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <div class="service-icon icon-blue">
+            <i class="bi bi-cloud-arrow-up-fill"></i>
+          </div>
+          <h3>Cloud Migration</h3>
+          <p>Seamlessly migrate your on-premises workloads to Azure, AWS, or GCP with zero downtime using our proven Lift-and-Shift and Re-architecture methodologies.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>Assessment &amp; Planning</li>
+            <li><i class="bi bi-chevron-right"></i>Zero-Downtime Migration</li>
+            <li><i class="bi bi-chevron-right"></i>Post-Migration Optimization</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card service-card-featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon icon-cyan">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <h3>DevOps &amp; CI/CD</h3>
+          <p>Automate your software delivery pipeline with Azure DevOps, GitHub Actions, and Kubernetes — enabling continuous integration, testing, and deployment at scale.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>Pipeline Automation</li>
+            <li><i class="bi bi-chevron-right"></i>Container Orchestration</li>
+            <li><i class="bi bi-chevron-right"></i>Infrastructure as Code</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon icon-purple">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <h3>Cloud Security</h3>
+          <p>Protect your data and applications with enterprise-grade security — Zero Trust architecture, threat detection, compliance management, and incident response.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>Zero Trust Security</li>
+            <li><i class="bi bi-chevron-right"></i>SIEM &amp; Threat Intelligence</li>
+            <li><i class="bi bi-chevron-right"></i>Compliance Automation</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon icon-green">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h3>AI &amp; Analytics</h3>
+          <p>Harness the power of AI and big data analytics with Azure Synapse, Power BI, and Machine Learning services to turn raw data into actionable business intelligence.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>Predictive Analytics</li>
+            <li><i class="bi bi-chevron-right"></i>ML Model Deployment</li>
+            <li><i class="bi bi-chevron-right"></i>Real-Time Dashboards</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon icon-orange">
+            <i class="bi bi-server"></i>
+          </div>
+          <h3>Managed Cloud</h3>
+          <p>Let our experts manage your cloud environment 24/7 — from capacity planning and performance tuning to cost optimization and compliance reporting.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>24/7 NOC Monitoring</li>
+            <li><i class="bi bi-chevron-right"></i>Cost Optimization</li>
+            <li><i class="bi bi-chevron-right"></i>Patch Management</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card">
+          <div class="service-icon icon-pink">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h3>Cloud-Native Dev</h3>
+          <p>Build modern, microservices-based applications using Kubernetes, serverless functions, and event-driven architectures optimized for cloud-native environments.</p>
+          <ul class="service-list">
+            <li><i class="bi bi-chevron-right"></i>Microservices Architecture</li>
+            <li><i class="bi bi-chevron-right"></i>Serverless Functions</li>
+            <li><i class="bi bi-chevron-right"></i>API Gateway Design</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM ===================== -->
+<section id="team" class="section-team">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label mx-auto">The People</div>
+      <h2 class="section-title">Meet Our <span class="gradient-text">Expert Team</span></h2>
+      <p class="section-subtitle">
+        A world-class team of certified cloud engineers, architects, and strategists
+        dedicated to your success.
+      </p>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-card">
+          <div class="team-avatar avatar-1">
+            <span>AK</span>
+          </div>
+          <div class="team-info">
+            <h4>Alex Kim</h4>
+            <p class="team-role">CEO &amp; Cloud Architect</p>
+            <p class="team-bio">15+ years architecting hyperscale cloud systems for Fortune 500 companies. Microsoft Azure MVP.</p>
+            <div class="team-certs">
+              <span class="cert-badge">Azure Solutions Architect</span>
+              <span class="cert-badge">AWS SAA</span>
+            </div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-card">
+          <div class="team-avatar avatar-2">
+            <span>SR</span>
+          </div>
+          <div class="team-info">
+            <h4>Sara Rahman</h4>
+            <p class="team-role">CTO &amp; DevOps Lead</p>
+            <p class="team-bio">Expert in Kubernetes, Terraform, and CI/CD automation. Previously led DevOps at TechGiant Inc.</p>
+            <div class="team-certs">
+              <span class="cert-badge">CKA Certified</span>
+              <span class="cert-badge">HashiCorp Terraform</span>
+            </div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-card">
+          <div class="team-avatar avatar-3">
+            <span>MC</span>
+          </div>
+          <div class="team-info">
+            <h4>Marcus Chen</h4>
+            <p class="team-role">Head of Cloud Security</p>
+            <p class="team-bio">CISSP-certified security architect specializing in zero-trust frameworks and cloud compliance.</p>
+            <div class="team-certs">
+              <span class="cert-badge">CISSP</span>
+              <span class="cert-badge">CEH</span>
+            </div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-card">
+          <div class="team-avatar avatar-4">
+            <span>LP</span>
+          </div>
+          <div class="team-info">
+            <h4>Layla Patel</h4>
+            <p class="team-role">AI &amp; Data Engineering Lead</p>
+            <p class="team-bio">Data scientist and ML engineer with deep expertise in Azure Synapse, Databricks, and MLOps.</p>
+            <div class="team-certs">
+              <span class="cert-badge">Azure Data Scientist</span>
+              <span class="cert-badge">GCP ML</span>
+            </div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-card">
+          <div class="team-avatar avatar-5">
+            <span>JO</span>
+          </div>
+          <div class="team-info">
+            <h4>James Osei</h4>
+            <p class="team-role">Solutions Engineer</p>
+            <p class="team-bio">Full-stack cloud developer specializing in serverless architectures, microservices, and API design.</p>
+            <div class="team-certs">
+              <span class="cert-badge">Azure Developer</span>
+              <span class="cert-badge">Node.js Certified</span>
+            </div>
+            <div class="team-socials">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section id="pricing" class="section-pricing">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label mx-auto">Transparent Pricing</div>
+      <h2 class="section-title">Choose Your <span class="gradient-text">Cloud Plan</span></h2>
+      <p class="section-subtitle">Flexible plans built for startups, growing businesses, and global enterprises. No hidden fees.</p>
+      <div class="pricing-toggle mt-4" data-aos="fade-up" data-aos-delay="100">
+        <span class="toggle-label active" id="lblMonthly">Monthly</span>
+        <div class="form-check form-switch d-inline-block mx-3">
+          <input class="form-check-input pricing-switch" type="checkbox" id="pricingToggle" />
+        </div>
+        <span class="toggle-label" id="lblAnnual">Annual <span class="save-badge">Save 20%</span></span>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="pricing-card">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="49" data-annual="39">49</span>
+            <span class="period">/mo</span>
+          </div>
+          <p class="pricing-desc">Perfect for startups and small teams getting started with cloud.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-lg"></i> 5 Cloud Instances</li>
+            <li><i class="bi bi-check-lg"></i> 500 GB Storage</li>
+            <li><i class="bi bi-check-lg"></i> Basic CI/CD Pipeline</li>
+            <li><i class="bi bi-check-lg"></i> Email Support (48hr SLA)</li>
+            <li><i class="bi bi-check-lg"></i> 99.5% Uptime SLA</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i> Advanced Security</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i> Dedicated Account Manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-pricing-outline">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-popular-badge">Most Popular</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="149" data-annual="119">149</span>
+            <span class="period">/mo</span>
+          </div>
+          <p class="pricing-desc">For growing businesses that need more power and enterprise features.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-lg"></i> 25 Cloud Instances</li>
+            <li><i class="bi bi-check-lg"></i> 5 TB Storage</li>
+            <li><i class="bi bi-check-lg"></i> Full CI/CD Automation</li>
+            <li><i class="bi bi-check-lg"></i> 24/7 Chat Support</li>
+            <li><i class="bi bi-check-lg"></i> 99.9% Uptime SLA</li>
+            <li><i class="bi bi-check-lg"></i> Advanced Security Suite</li>
+            <li class="disabled"><i class="bi bi-x-lg"></i> Dedicated Account Manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-pricing-primary">Get Started</a>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-card">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount" data-monthly="499" data-annual="399">499</span>
+            <span class="period">/mo</span>
+          </div>
+          <p class="pricing-desc">Full-scale enterprise cloud management with dedicated support.</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-lg"></i> Unlimited Instances</li>
+            <li><i class="bi bi-check-lg"></i> Unlimited Storage</li>
+            <li><i class="bi bi-check-lg"></i> Custom CI/CD &amp; IaC</li>
+            <li><i class="bi bi-check-lg"></i> 24/7 Phone + Priority</li>
+            <li><i class="bi bi-check-lg"></i> 99.99% Uptime SLA</li>
+            <li><i class="bi bi-check-lg"></i> Zero-Trust Security</li>
+            <li><i class="bi bi-check-lg"></i> Dedicated Account Manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-pricing-outline">Contact Sales</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section id="testimonials" class="section-testimonials">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-label mx-auto">Client Stories</div>
+      <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+    </div>
+    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-delay="100">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <p class="testimonial-text">
+                  "CloudNova completely transformed our infrastructure. We reduced our cloud spending by 42% while achieving 3× better performance. The migration was seamless, and their support team was outstanding throughout the entire process."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar av-1">DT</div>
+                  <div class="author-info">
+                    <h5>David Thompson</h5>
+                    <p>CTO, FinanceFlow Inc.</p>
+                  </div>
+                  <div class="testimonial-stars ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <p class="testimonial-text">
+                  "Their DevOps team built us a CI/CD pipeline that went from weekly deployments to multiple deploys per day. The Zero Trust security model they implemented gave our compliance team complete peace of mind."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar av-2">MJ</div>
+                  <div class="author-info">
+                    <h5>Maria Jensen</h5>
+                    <p>VP Engineering, HealthBridge</p>
+                  </div>
+                  <div class="testimonial-stars ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                <p class="testimonial-text">
+                  "CloudNova's AI analytics platform surfaced insights we never knew existed in our data. Within 6 months, we increased revenue by 28% based purely on their recommendations. An absolute game-changer for us."
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar av-3">KN</div>
+                  <div class="author-info">
+                    <h5>Kenji Nakamura</h5>
+                    <p>COO, RetailEdge Global</p>
+                  </div>
+                  <div class="testimonial-stars ms-auto">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <div class="carousel-indicators-custom">
+          <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <button class="carousel-btn" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq" class="section-faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="section-label mx-auto">FAQ</div>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-subtitle">Everything you need to know about CloudNova's services and solutions.</p>
+        </div>
+        <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <i class="bi bi-cloud-fill faq-icon"></i>
+                What cloud platforms does CloudNova support?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                CloudNova is a multi-cloud solutions provider with deep expertise in Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). We also support hybrid and on-premises environments through our Hybrid Cloud services. Our architects are certified across all major platforms and will recommend the best fit for your business needs.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <i class="bi bi-clock-history faq-icon"></i>
+                How long does a typical cloud migration take?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Migration timelines vary based on complexity and scope. A simple Lift-and-Shift migration for a small application can be completed in 2–4 weeks. A full enterprise re-architecture with multiple workloads typically takes 3–6 months. We begin with a thorough Discovery and Assessment phase to give you a precise timeline before any work begins.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <i class="bi bi-shield-check faq-icon"></i>
+                How do you ensure our data is secure during migration?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Security is our top priority. We use AES-256 encryption for all data in transit and at rest, implement network segmentation and private connectivity, and follow a Zero Trust security model throughout. All migrations are audited, and we maintain compliance with GDPR, HIPAA, and ISO 27001 standards. We also conduct thorough penetration testing post-migration.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <i class="bi bi-currency-dollar faq-icon"></i>
+                Can CloudNova help reduce our existing cloud bill?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Absolutely. Our FinOps (Cloud Financial Operations) service is specifically designed to optimize cloud spend. On average, our clients see 30–45% cost reduction within the first 90 days through right-sizing, reserved instance planning, unused resource cleanup, and auto-scaling optimizations. We provide a free Cloud Cost Assessment as part of our onboarding process.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <i class="bi bi-headset faq-icon"></i>
+                What does your 24/7 support include?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Our 24/7 support includes a dedicated Network Operations Center (NOC) that monitors your infrastructure around the clock. Professional plan clients receive chat and email support with a 4-hour response SLA. Enterprise clients receive phone support, a dedicated account manager, and a 15-minute critical incident response SLA. All support tickets are handled by certified cloud engineers.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                <i class="bi bi-graph-up faq-icon"></i>
+                Do you offer training for our internal team?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Yes! CloudNova Academy offers both online and on-site training programs covering Azure, AWS, DevOps, Kubernetes, and cloud security. We also offer certification preparation courses aligned with Microsoft, AWS, and Google certification tracks. All Professional and Enterprise clients receive free access to our online training portal.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                <i class="bi bi-arrow-repeat faq-icon"></i>
+                Is there a minimum contract commitment?
+              </button>
+            </h2>
+            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                Our Starter and Professional plans are available on a month-to-month basis with no long-term commitment required. Enterprise plans are available on 12 or 24-month contracts with significant discounts for longer commitments. We offer a 30-day money-back guarantee on all managed service plans, so you can try CloudNova risk-free.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                <i class="bi bi-patch-check faq-icon"></i>
+                What certifications does CloudNova hold?
+              </button>
+            </h2>
+            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body faq-body">
+                CloudNova Solutions is a Microsoft Gold Partner (Azure Expert MSP), AWS Advanced Consulting Partner, and Google Cloud Partner. We hold ISO 27001, SOC 2 Type II, and PCI-DSS certifications at the company level. Our individual engineers hold 200+ active certifications across Azure, AWS, GCP, Kubernetes, and cybersecurity domains.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section-contact">
+  <div class="container">
+    <div class="row g-5">
+
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's Build Your <span class="gradient-text">Cloud Future</span></h2>
+        <p class="section-body">
+          Ready to transform your infrastructure? Fill out the form and our cloud experts
+          will reach out within 24 hours to schedule a free consultation.
+        </p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <strong>Headquarters</strong>
+              <p>1200 Cloud Park Drive, Suite 800<br />San Francisco, CA 94102, USA</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <p>hello@cloudnova.io<br />support@cloudnova.io</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <p>+1 (800) 555-NOVA<br />Mon–Fri, 9am–6pm PST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+        <div class="contact-form-card">
+          <div id="formSuccess" class="form-success-msg d-none">
+            <i class="bi bi-check-circle-fill"></i>
+            <h4>Message Sent!</h4>
+            <p>Thank you for reaching out. Our team will contact you within 24 hours.</p>
+          </div>
+          <div id="contactFormWrapper">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">First Name *</label>
+                  <input type="text" class="form-control cn-input" id="firstName" placeholder="John" required />
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Last Name *</label>
+                  <input type="text" class="form-control cn-input" id="lastName" placeholder="Doe" required />
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Work Email *</label>
+                  <input type="email" class="form-control cn-input" id="email" placeholder="john@company.com" required />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Company</label>
+                  <input type="text" class="form-control cn-input" id="company" placeholder="Your Company" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Service Interest *</label>
+                  <select class="form-select cn-input" id="service" required>
+                    <option value="" disabled selected>Select a service...</option>
+                    <option>Cloud Migration</option>
+                    <option>DevOps &amp; CI/CD</option>
+                    <option>Cloud Security</option>
+                    <option>AI &amp; Analytics</option>
+                    <option>Managed Cloud</option>
+                    <option>Cloud-Native Development</option>
+                    <option>General Inquiry</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a service.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message *</label>
+                  <textarea class="form-control cn-input" id="message" rows="5" placeholder="Tell us about your project or question..." required></textarea>
+                  <div class="invalid-feedback">Please write a message.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="privacyCheck" required />
+                    <label class="form-check-label" for="privacyCheck">
+                      I agree to CloudNova's <a href="#">Privacy Policy</a> and consent to being contacted.
+                    </label>
+                    <div class="invalid-feedback">You must accept our privacy policy.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100">
+                    <span class="btn-text">Send Message <i class="bi bi-send-fill ms-2"></i></span>
+                    <span class="btn-loading d-none"><i class="bi bi-arrow-repeat spin me-2"></i> Sending...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="footer-brand d-flex align-items-center gap-2 mb-3" href="#">
+            <div class="brand-icon sm"><i class="bi bi-cloud-fill"></i></div>
+            <span class="brand-text">Cloud<span class="brand-accent">Nova</span></span>
+          </a>
+          <p class="footer-desc">
+            Empowering businesses worldwide with next-generation cloud infrastructure, 
+            intelligent automation, and enterprise-grade security solutions.
+          </p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+          <div class="footer-certifications mt-3">
+            <span class="cert-pill"><i class="bi bi-microsoft"></i> Azure Gold Partner</span>
+            <span class="cert-pill"><i class="bi bi-shield-fill-check"></i> ISO 27001</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#services">Cloud Migration</a></li>
+            <li><a href="#services">DevOps &amp; CI/CD</a></li>
+            <li><a href="#services">Cloud Security</a></li>
+            <li><a href="#services">AI &amp; Analytics</a></li>
+            <li><a href="#services">Managed Cloud</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="footer-heading">Company</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer-heading">Stay Updated</h5>
+          <p class="footer-newsletter-desc">Get the latest cloud insights and product updates delivered to your inbox.</p>
+          <div class="footer-newsletter">
+            <input type="email" class="newsletter-input" placeholder="Enter your email..." />
+            <button class="newsletter-btn" type="button">
+              <i class="bi bi-send-fill"></i>
+            </button>
+          </div>
+          <div class="footer-contact-quick mt-3">
+            <p><i class="bi bi-envelope me-2"></i> hello@cloudnova.io</p>
+            <p><i class="bi bi-telephone me-2"></i> +1 (800) 555-NOVA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">© 2025 CloudNova Solutions, Inc. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- Custom Script -->
+<script src="script.js"></script>
+</body>
+</html>
