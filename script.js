@@ -341,42 +341,54 @@ document.addEventListener('DOMContentLoaded', function () {
        */
       try {
 
-const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+const fileInput = document.getElementById("pdfInput");
+
+if (!fileInput || !fileInput.files.length) {
+    alert("Please upload a PDF.");
+    return;
+}
+
+const file = fileInput.files[0];
+
+const endpoint = "https://cloudnova-form-ai.cognitiveservices.azure.com/";
+const apiKey = "API_KEY_HERE";
+
+const response = await fetch(
+  `${endpoint}/formrecognizer/documentModels/prebuilt-document:analyze?api-version=2023-07-31`,
+  {
     method: "POST",
-
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/pdf",
+      "Ocp-Apim-Subscription-Key": apiKey
     },
+    body: file
+  }
+);
+console.log("Response status:", response.status);
 
-    body: JSON.stringify({
+const operationLocation = response.headers.get("operation-location");
+console.log("Operation URL:", operationLocation);
 
-    firstName: document.getElementById("firstName").value,
-lastName: document.getElementById("lastName").value,
-email: document.getElementById("email").value,
-company: document.getElementById("company").value,
-service: document.getElementById("service").value,
-message: document.getElementById("message").value
+setTimeout(async () => {
 
-    })
-
+  const resultResponse = await fetch(operationLocation, {
+    headers: {
+      "Ocp-Apim-Subscription-Key": apiKey
+    }
   });
 
-  const data = await response.json();
+  const result = await resultResponse.json();
+
+  console.log("Form Recognizer Result:", result);
 
   btn.disabled = false;
   btnText.classList.remove('d-none');
   btnLoad.classList.add('d-none');
 
-  if (data.success) {
+  formWrapper.classList.add('d-none');
+  formSuccess.classList.remove('d-none');
 
-    formWrapper.classList.add('d-none');
-    formSuccess.classList.remove('d-none');
-
-  } else {
-
-    alert("Submission failed");
-
-  }
+}, 5000);
 
 } catch (error) {
 
